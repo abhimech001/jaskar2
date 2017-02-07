@@ -33,7 +33,7 @@ describe('This is test suite',function() {
 	it('This is test case with integer',function() {
 
 		var a = addNum();
-		expect(a).toBe();
+		expect(a).toBe(null);
 	});
 	
 	});
