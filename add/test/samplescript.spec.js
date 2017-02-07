@@ -12,7 +12,7 @@ describe('This is test suite',function() {
 
 	it('This is test case with integer',function() {
 
-		var a = addNum(null,2);
+		var a = addNum(0,2);
 		expect(a).toBe(0);
 	});
 	
@@ -22,7 +22,7 @@ describe('This is test suite',function() {
 
 	it('This is test case with integer',function() {
 
-		var a = addNum(1,e);
+		var a = addNum(1,0);
 		expect(a).toBe(1);
 	});
 	
@@ -32,7 +32,7 @@ describe('This is test suite',function() {
 
 	it('This is test case with integer',function() {
 
-		var a = addNum(null,null);
+		var a = addNum();
 		expect(a).toBe(null);
 	});
 	
