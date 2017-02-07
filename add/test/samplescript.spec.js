@@ -9,12 +9,12 @@ describe('This is test suite',function() {
 	});
 	
 	
-describe('This is test suite',function() {
+//describe('This is test suite',function() {
 
-		it('This is test case with string',function() {
+//		it('This is test case with string',function() {
 
-		var b = addNum('e','f');
-		expect(b).toBe('ef');
-	});
+//		var b = addNum('e','f');
+//		expect(b).toBe('ef');
+//	});
 	
-	});
+//	});
