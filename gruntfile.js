@@ -25,15 +25,35 @@ module.exports = function(grunt) {
       
 
 	karma: {
-			options: {
-				configFile: 'karma-conf.js'
-			},
-			unit: {
-				singleRun: true
+		unit: {
+			//options: {
+				configFile: 'karma.conf.js',
+				frameworks: ['jasmine'],
+				singleRun: true,
+				browsers: ['Chrome']
+			//},
 			},
 			
     }
-   });
+  });
+   
+   
+   
+   
+//karma: {  
+//  unit: {
+//    options: {
+ //     frameworks: ['jasmine'],
+   //   singleRun: true,
+     // browsers: ['Chrome'],
+	 // configFile: 'karma.conf.js's
+      //]
+   // }
+  //}
+	//  }});
+   
+   
+   
         //browsers: ['PhantomJS'],
         //plugins: plugins    
 	//},
@@ -78,7 +98,7 @@ module.exports = function(grunt) {
    //grunt.loadNpmTasks('grunt-contrib-jshint');
    //grunt.loadNpmTasks('grunt-contrib-watch');
    grunt.loadNpmTasks('grunt-karma');
-	   grunt.registerTask('default', ['karma']);
+   grunt.registerTask('default', ['karma']);
 
   // grunt.registerTask('default', ['jshint','build']);
    //grunt.registerTask('test', ['karma:single', 'karma:config'])
