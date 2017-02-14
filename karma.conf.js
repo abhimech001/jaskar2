@@ -15,8 +15,10 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-        '*/js/**/*.js',
-        '*/test/**/*.js'
+      //  '*/js/**/*.js',
+      //  '*/test/**/*.js'      
+        'add/js/**/*.js','multiply/js/**/*.js',
+        'add/test/**/*.js','multiply/test/**/*.js'
     ],
 
 
@@ -28,7 +30,9 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-        '*/js/**/*.js': ['coverage']
+       // '*/js/**/*.js': ['coverage']
+    'add/js/**/*.js': ['coverage'],
+		'multiply/js/**/*.js': ['coverage']
     },
 
 
@@ -51,8 +55,8 @@ module.exports = function(config) {
         // reporters not supporting the `file` property 
        { type: 'html', subdir: 'report-html' },
        { type: 'lcov', subdir: 'report-lcov' },
-       { type: 'lcovonly', subdir: '.', file: 'report-lcovonly.txt' },
-        { type: 'lcovonly', subdir: '.', file: 'report.lcov' },
+ //      { type: 'lcovonly', subdir: '.', file: 'report-lcovonly.txt' },
+  //      { type: 'lcovonly', subdir: '.', file: 'report.lcov' },
        ]
      },
     // web server port
