@@ -25,22 +25,24 @@ module.exports = function(grunt) {
       
 
 	karma: {
-	 unit:{
-      	   options: {
-		    {
-        configFile: 'karma-conf.js'
-      },
-        frameworks: ['jasmine'],
-		    unit{singleRun: true,},
+			options: {
+				configFile: 'karma-conf.js'
+			},
+			unit: {
+				singleRun: true
+			},
+			
+    }
+   });
         //browsers: ['PhantomJS'],
         //plugins: plugins    
 	//},
        // files: [
           //'jaskar2/**/*.js'
        // ]
-		    }
-		    }
-      },
+	//	    }
+	//	    }
+      //},
 
       //config: {
         //configFile: 'karma.conf.js',
@@ -71,7 +73,7 @@ module.exports = function(grunt) {
      // }
     //  }
   // });
-		    });
+		
   
    //grunt.loadNpmTasks('grunt-contrib-jshint');
    //grunt.loadNpmTasks('grunt-contrib-watch');
