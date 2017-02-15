@@ -29,6 +29,8 @@ module.exports = function(grunt) {
 	   jshint: {
          // define the files to lint
          all: ['add/**/*.js','multiply/**/*.js'],
+		 reporter: require ('jshint-html-reporter), 
+		 reporteroutput : 'jshint-report.html'
          // configure JSHint
          //options: { jshintrc: true
             // more options here if you want to override JSHint defaults
