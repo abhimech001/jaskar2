@@ -12,16 +12,7 @@ module.exports = function(grunt) {
 	//src: ['add/**/*.js','multiply/**/*.js'],
 	//dest: 'web/'
 	//},
-      jshint: {
-         // define the files to lint
-         all: ['add/**/*.js','multiply/**/*.js'],
-         // configure JSHint
-         //options: { jshintrc: true
-            // more options here if you want to override JSHint defaults
-            //globals: {
-               //jQuery: true,
-            }
-         
+      
       
 
 	karma: {
@@ -34,7 +25,17 @@ module.exports = function(grunt) {
 			//},
 			},
 			
-    }
+    },
+	   jshint: {
+         // define the files to lint
+         all: ['add/**/*.js','multiply/**/*.js'],
+         // configure JSHint
+         //options: { jshintrc: true
+            // more options here if you want to override JSHint defaults
+            //globals: {
+               //jQuery: true,
+            }
+         
   });
    
    
