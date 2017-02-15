@@ -28,27 +28,24 @@ module.exports = function(grunt) {
     },
 	   jshint: {
          // define the files to lint
-		  // options: {
+	
          all: ['add/**/*.js','multiply/**/*.js'],
-	 reporter: require ('jshint-html-reporter), 
-	 reporteroutput: 'jshint-report.html'
-			 //   },
+		   
+	options: {
+		reporter: require ('jshint-html-reporter'), 
+	 	reporteroutput: 'jshint-report.html' 
+		  },
          // configure JSHint
          //options: { jshintrc: true
             // more options here if you want to override JSHint defaults
             //globals: {
                //jQuery: true,
             }
+	
          
   });
    
-   
-   
-   
 
-   
-   
-   
         //browsers: ['PhantomJS'],
         //plugins: plugins    
 	//},
