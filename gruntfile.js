@@ -28,9 +28,11 @@ module.exports = function(grunt) {
     },
 	   jshint: {
          // define the files to lint
+		  // options: {
          all: ['add/**/*.js','multiply/**/*.js'],
-		 reporter: require ('jshint-html-reporter), 
-		 reporteroutput : 'jshint-report.html'
+	 reporter: require ('jshint-html-reporter), 
+	 reporteroutput: 'jshint-report.html'
+			 //   },
          // configure JSHint
          //options: { jshintrc: true
             // more options here if you want to override JSHint defaults
@@ -89,7 +91,7 @@ module.exports = function(grunt) {
 		
   
    grunt.loadNpmTasks('grunt-contrib-jshint');
-  // grunt.loadNpmTasks('grunt-contrib-watch');
+   grunt.loadNpmTasks('jshint-html-reporter');
    grunt.loadNpmTasks('grunt-karma');
    grunt.registerTask('default', ['karma','jshint']);
 
