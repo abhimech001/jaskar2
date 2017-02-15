@@ -78,7 +78,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome','IE10'],
+    browsers: ['Chrome','IE'],
     captureTimeout: 60000, // it was already there
     browserDisconnectTimeout : 10000,
     browserDisconnectTolerance : 1,
