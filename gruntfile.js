@@ -12,15 +12,15 @@ module.exports = function(grunt) {
 	//src: ['add/**/*.js','multiply/**/*.js'],
 	//dest: 'web/'
 	//},
-      //jshint: {
+      jshint: {
          // define the files to lint
-         //all: ['Gruntfile.js', 'add/**/*.js','multiply/**/*.js'],
+         all: ['Gruntfile.js', 'add/**/*.js','multiply/**/*.js'],
          // configure JSHint
          //options: { jshintrc: true
             // more options here if you want to override JSHint defaults
             //globals: {
                //jQuery: true,
-          //  }
+            }
          
       
 
@@ -86,9 +86,9 @@ module.exports = function(grunt) {
 		
   
    grunt.loadNpmTasks('grunt-contrib-jshint');
-   grunt.loadNpmTasks('grunt-contrib-watch');
+  // grunt.loadNpmTasks('grunt-contrib-watch');
    grunt.loadNpmTasks('grunt-karma');
-   grunt.registerTask('default', ['karma']);
+   grunt.registerTask('default', ['karma','jshint]);
 
   // grunt.registerTask('default', ['jshint','build']);
    //grunt.registerTask('test', ['karma:single', 'karma:config'])
