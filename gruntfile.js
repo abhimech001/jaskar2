@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-
+	// abba dabba
 	//var plugins = ['karma-jasmine']
 	//var browsers = []
         //plugins.push('karma-chrome-launcher')
@@ -32,9 +32,14 @@ module.exports = function(grunt) {
          all: ['add/**/*.js','multiply/**/*.js'],
 		   
 	options: {
+<<<<<<< HEAD
 		//reporter: require ('jshint-html-reporter'), 
 		 reporter: require('jshint-stylish'),
 	 	reporterOutput: 'coverage/jshint-report.html'
+=======
+		reporter: require ('jshint-html-reporter'), 
+	 	reporteroutput: 'coverage/jshint-report.html'
+>>>>>>> 0b986c99985f00b8e1300dcfe1e41ca4099b1c7e
 		},
 		  
          // configure JSHint
