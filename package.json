@@ -15,6 +15,7 @@
     "jasmine": "^2.5.3",
     "jasmine-core": "^2.5.2",
     "jshint-html-reporter": "^0.2.4",
+    "jshint-table-reporter": "^0.1.0",
     "karma": "^0.13.22",
     "karma-chrome-launcher": "^0.2.3",
     "karma-coverage": "^0.5.5",

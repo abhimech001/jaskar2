@@ -33,8 +33,8 @@ module.exports = function(grunt) {
 		   
 	options: {
 
-		reporter: require ('jshint-html-reporter'), 
-		reporter: require('jshint-stylish'),
+		//reporter: require ('jshint-html-reporter'), 
+		reporter: require('jshint-table-reporter'),
 	 	reporterOutput: 'coverage/jshint-report.html'
 
 		},
@@ -92,7 +92,7 @@ module.exports = function(grunt) {
 		
   
    grunt.loadNpmTasks('grunt-contrib-jshint');
-   grunt.loadNpmTasks('jshint-html-reporter');
+   //grunt.loadNpmTasks('jshint-html-reporter');
    grunt.loadNpmTasks('grunt-karma');
    grunt.registerTask('default', ['karma','jshint']);
 
