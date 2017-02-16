@@ -36,7 +36,7 @@ module.exports = function(grunt) {
 	 	reporteroutput: 'coverage/jshint-report.html'
 		},
 		  
-         // configure JSHint
+         // configure JSHint.
          //options: { jshintrc: true
             // more options here if you want to override JSHint defaults
             //globals: {
