@@ -42,7 +42,7 @@ module.exports = function(grunt) {
 >>>>>>> 0b986c99985f00b8e1300dcfe1e41ca4099b1c7e
 		},
 		  
-         // configure JSHint
+         // configure JSHint.
          //options: { jshintrc: true
             // more options here if you want to override JSHint defaults
             //globals: {
