@@ -26,18 +26,18 @@ module.exports = function(grunt) {
 			},
 			
     },
-	   jshint: {
+	   //jshint: {
          // define the files to lint
 	
-         all: ['add/**/*.js','multiply/**/*.js'],
+         //all: ['add/**/*.js','multiply/**/*.js'],
 		   
-	options: {
+	//options: {
 
 		//reporter: require ('jshint-html-reporter'), 
-		reporter: require('jshint-table-reporter'),
-	 	reporterOutput: 'coverage/jshint-report.html'
+		//reporter: require('jshint-table-reporter'),
+	 	//reporterOutput: 'coverage/jshint-report.html'
 
-		},
+		//},
 		  
          // configure JSHint.
          //options: { jshintrc: true
@@ -91,10 +91,10 @@ module.exports = function(grunt) {
   // });
 		
   
-   grunt.loadNpmTasks('grunt-contrib-jshint');
+   //grunt.loadNpmTasks('grunt-contrib-jshint');
    //grunt.loadNpmTasks('jshint-html-reporter');
    grunt.loadNpmTasks('grunt-karma');
-   grunt.registerTask('default', ['karma','jshint']);
+   grunt.registerTask('default', ['karma']);
 
   // grunt.registerTask('default', ['jshint','build']);
    //grunt.registerTask('test', ['karma:single', 'karma:config'])
