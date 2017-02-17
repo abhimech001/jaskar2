@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 			//},
 			},
 			
-    },
+    //},
 	   //jshint: {
          // define the files to lint
 	
