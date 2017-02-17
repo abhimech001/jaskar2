@@ -32,7 +32,9 @@ module.exports = function(config) {
     preprocessors: {
        // '*/js/**/*.js': ['coverage']
     'add/js/**/*.js': ['coverage'],
-		'multiply/js/**/*.js': ['coverage']
+    'multiply/js/**/*.js': ['coverage']
+    'add/test/**/*.js': ['coverage'],
+    'multiply/test/**/*.js': ['coverage']
     },
 
 
