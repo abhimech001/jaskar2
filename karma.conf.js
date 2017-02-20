@@ -18,7 +18,7 @@ module.exports = function(config) {
       //  '*/js/**/*.js',
       //  '*/test/**/*.js'      
         'add/js/**/*.js','multiply/js/**/*.js',
-        //'add/test/**/*.js','multiply/test/**/*.js'
+        'add/test/**/*.js','multiply/test/**/*.js'
     ],
 
 
