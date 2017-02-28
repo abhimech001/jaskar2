@@ -12,9 +12,4 @@ describe('This is test suite with null values',function() {
 	});	
 	});
 
-describe('This is test suite with null values',function() {
-	it('This is test case with integer',function() {
-		var a = multiplyNum('x','x');
-		expect(a).toBe();
-	});	
-	});
+
